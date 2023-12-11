@@ -1,9 +1,6 @@
 import React from 'react';
 import AddExpense from './AddExpense';
-import ExpenseList from './ExpenseList'; // Import the new component
-
-// Sravya Dandibhatta
-// Personal Finance Tracker
+import ExpenseList from './ExpenseList';
 
 function App() {
   return (
@@ -13,7 +10,7 @@ function App() {
       </header>
       <main>
         <AddExpense />
-        <ExpenseList /> {/* Render the ExpenseList component */}
+        <ExpenseList />
       </main>
     </div>
   );
