@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
+// Sravya Dandibhatta
+// Personal Finance Tracker
+
 function ExpenseList() {
   const [expenses, setExpenses] = useState([]);
   const [totalAmount, setTotalAmount] = useState(0);

@@ -2,6 +2,9 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import sqlite3
 
+# Sravya Dandibhatta
+# Personal Finance Tracker
+
 app = Flask(__name__)
 CORS(app)
 
@@ -17,7 +20,7 @@ def get_expenses():
     cursor.execute("SELECT * FROM expenses;")
     expenses = cursor.fetchall()
     conn.close()  
-    expenses_list = [dict(expense) for expense in expenses]  # Convert to a list of dictionaries
+    expenses_list = [dict(expense) for expense in expenses]
     return jsonify({"expenses": expenses_list})
 
 @app.route('/add_expense', methods=['POST'])

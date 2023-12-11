@@ -2,6 +2,9 @@ import React from 'react';
 import AddExpense from './AddExpense';
 import ExpenseList from './ExpenseList';
 
+// Sravya Dandibhatta
+// Personal Finance Tracker
+
 function App() {
   return (
     <div className="App">
